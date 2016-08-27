@@ -53,7 +53,7 @@ while yesorno == 'n':
     yesorno = raw_input('You have chosen ' + folders[theme - 1] + ' as your theme. Is this correct(y/n): ')
 
 folder = os.path.abspath(folders[theme - 1])
-foldername = folders[theme] + '.zip'
+foldername = folders[theme - 1] + '.zip'
 
 print 'Creating ' + foldername + '...' 
 themeZip = zipfile.ZipFile(foldername, 'w')
